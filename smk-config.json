@@ -125,7 +125,7 @@
             "enabled": true,
             "title": "About the MRDT Map",
             "position": "list-menu",
-            "content": "<p>Lookup the MRDT for any property in BC.</p>"
+            "content": "<p>Lookup the MRDT rate for any property in BC.</p>"
         },
         {
             "order": 3,
