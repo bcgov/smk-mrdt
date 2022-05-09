@@ -1,0 +1,65 @@
+{
+    "layers": [
+        {
+            "title": "MRDT Tax Areas",
+            "id": "mrdt-tax-areas",
+            "attributes": [
+                {
+                    "id": "objectid",
+                    "name": "OBJECTID",
+                    "title": "OBJECTID",
+                    "visible": true
+                },
+                {
+                    "id": "recipient",
+                    "name": "Recipient",
+                    "title": "Recipient",
+                    "visible": true
+                },
+                {
+                    "id": "shape-leng",
+                    "name": "SHAPE_Leng",
+                    "title": "SHAPE_Leng",
+                    "visible": true
+                },
+                {
+                    "id": "tax-rate",
+                    "name": "Tax_Rate",
+                    "title": "Tax_Rate",
+                    "visible": true
+                },
+                {
+                    "id": "accom-area",
+                    "name": "Accom_Area",
+                    "title": "Accom_Area",
+                    "visible": true
+                },
+                {
+                    "id": "shape-length",
+                    "name": "Shape_Length",
+                    "title": "Shape_Length",
+                    "visible": true
+                },
+                {
+                    "id": "shape-area",
+                    "name": "Shape_Area",
+                    "title": "Shape_Area",
+                    "visible": true
+                },
+                {
+                    "id": "effect-date",
+                    "name": "Effect_date",
+                    "title": "Effect_date",
+                    "visible": true
+                },
+                {
+                    "id": "repeal-date",
+                    "name": "Repeal_date",
+                    "title": "Repeal_date",
+                    "visible": true
+                }
+            ],
+            "dataUrl": "./layers/mrdt-tax-areas.geojson"
+        }
+    ]
+}

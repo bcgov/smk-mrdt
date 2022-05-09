@@ -1,0 +1,13 @@
+{
+    "name": "smk-mrdt",
+    "version": "0.0.1",
+    "description": "Lookup the MRDT for any property in BC.",
+    "author": "DataBC Map Team",
+    "dependencies": {
+        "@bcgov/smk": "1.0.9",
+        "http-server": "^0.12.3"
+    },
+    "scripts": {
+        "view": "http-server -o -c-1"
+    }
+}

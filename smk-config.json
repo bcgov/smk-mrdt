@@ -1,0 +1,281 @@
+{
+    "name": "smk-mrdt",
+    "viewer": {
+        "type": "leaflet",
+        "location": {
+            "center": [
+                -122.16796875000001,
+                52.2008737173322
+            ],
+            "extent": [
+                -130.71533203125003,
+                47.264320080254805,
+                -113.62060546875001,
+                56.64414704199469
+            ],
+            "zoom": 6
+        },
+        "baseMap": "Streets"
+    },
+    "layers": [
+        {
+            "type": "vector",
+            "id": "mrdt-tax-areas",
+            "title": "MRDT Tax Areas",
+            "isVisible": true,
+            "isQueryable": true,
+            "opacity": 0.65,
+            "minScale": null,
+            "maxScale": null,
+            "titleAttribute": null,
+            "attributes": [
+                {
+                    "id": "objectid",
+                    "name": "OBJECTID",
+                    "title": "OBJECTID",
+                    "visible": false
+                },
+                {
+                    "id": "recipient",
+                    "name": "Recipient",
+                    "title": "Recipient",
+                    "visible": true
+                },
+                {
+                    "id": "shape-leng",
+                    "name": "SHAPE_Leng",
+                    "title": "SHAPE_Leng",
+                    "visible": false
+                },
+                {
+                    "id": "tax-rate",
+                    "name": "Tax_Rate",
+                    "title": "Tax_Rate",
+                    "visible": true
+                },
+                {
+                    "id": "accom-area",
+                    "name": "Accom_Area",
+                    "title": "Accom_Area",
+                    "visible": true
+                },
+                {
+                    "id": "shape-length",
+                    "name": "Shape_Length",
+                    "title": "Shape_Length",
+                    "visible": false
+                },
+                {
+                    "id": "shape-area",
+                    "name": "Shape_Area",
+                    "title": "Shape_Area",
+                    "visible": false
+                },
+                {
+                    "id": "effect-date",
+                    "name": "Effect_date",
+                    "title": "Effect_date",
+                    "visible": false
+                },
+                {
+                    "id": "repeal-date",
+                    "name": "Repeal_date",
+                    "title": "Repeal_date",
+                    "visible": false
+                }
+            ],
+            "queries": null,
+            "useClustering": false,
+            "dataUrl": "./layers/mrdt-tax-areas.geojson",
+            "legend": {
+                "line": true
+            },
+            "style": {
+                "strokeColor": "#3388ff",
+                "strokeOpacity": 1,
+                "strokeWidth": 3,
+                "strokeCap": "round",
+                "strokeJoin": "round",
+                "fill": false,
+                "fillColor": "#3388ff",
+                "fillOpacity": 0.2
+            }
+        }
+    ],
+    "tools": [
+        {
+            "type": "toolbar",
+            "enabled": true
+        },
+        {
+            "type": "list-menu",
+            "enabled": true,
+            "title": "Municipal Regional District Tax Map"
+        },
+        {
+            "type": "pan",
+            "enabled": true
+        },
+        {
+            "type": "zoom",
+            "enabled": true
+        },
+        {
+            "type": "about",
+            "enabled": true,
+            "title": "About the MRDT Map",
+            "position": "list-menu",
+            "content": "<p>Lookup the MRDT for any property in BC.</p>"
+        },
+        {
+            "order": 3,
+            "position": [
+                "shortcut-menu",
+                "list-menu"
+            ],
+            "icon": "layers",
+            "title": "Layers",
+            "command": {
+                "allVisibility": true,
+                "filter": true,
+                "legend": true
+            },
+            "glyph": {
+                "visible": "visibility",
+                "hidden": "visibility_off"
+            },
+            "type": "layers",
+            "enabled": true,
+            "display": [
+                {
+                    "id": "mrdt-tax-areas",
+                    "title": "MRDT Tax Area"
+                }
+            ]
+        },
+        {
+            "type": "baseMaps",
+            "enabled": false
+        },
+        {
+            "type": "identify",
+            "enabled": true,
+            "showPanel": true,
+            "showWidget": true,
+            "style": {
+                "strokeWidth": 1,
+                "strokeStyle": "1, 1",
+                "strokeColor": "#000000",
+                "strokeOpacity": 0.8,
+                "fillColor": "#000000",
+                "fillOpacity": 0.5,
+                "markerSize": [
+                    20,
+                    20
+                ],
+                "markerOffset": [
+                    10,
+                    0
+                ]
+            }
+        },
+        {
+            "type": "search",
+            "enabled": true
+        },
+        {
+            "type": "coordinate",
+            "enabled": false
+        },
+        {
+            "type": "measure",
+            "enabled": false
+        },
+        {
+            "type": "markup",
+            "enabled": false
+        },
+        {
+            "order": 2,
+            "showFactor": true,
+            "showBar": true,
+            "showZoom": false,
+            "type": "scale",
+            "enabled": false
+        },
+        {
+            "type": "minimap",
+            "enabled": false
+        },
+        {
+            "order": 4,
+            "position": [
+                "shortcut-menu",
+                "list-menu"
+            ],
+            "icon": "directions_car",
+            "title": "Route Planner",
+            "geocoderService": {},
+            "routePlannerService": {},
+            "optimal": false,
+            "roundTrip": false,
+            "criteria": "shortest",
+            "truck": false,
+            "truckRoute": null,
+            "truckHeight": null,
+            "truckWidth": null,
+            "truckLength": null,
+            "truckWeight": null,
+            "command": {
+                "optimal": true,
+                "roundTrip": true,
+                "criteria": true,
+                "vehicleType": true,
+                "truckRoute": true,
+                "truckHeight": true,
+                "truckWidth": true,
+                "truckLength": true,
+                "truckWeight": true,
+                "truckHeightUnit": true,
+                "truckWidthUnit": true,
+                "truckLengthUnit": true,
+                "truckWeightUnit": true
+            },
+            "type": "directions",
+            "enabled": false
+        },
+        {
+            "showHeader": false,
+            "type": "location",
+            "enabled": false
+        },
+        {
+            "type": "select",
+            "enabled": false
+        },
+        {
+            "type": "geomark",
+            "geomarkService": {
+                "url": "https://apps.gov.bc.ca/pub/geomark"
+            },
+            "position": "list-menu",
+            "enabled": false
+        },
+        {
+            "order": 1,
+            "position": "toolbar",
+            "icon": "now_widgets",
+            "title": "MRDT",
+            "useComponent": true,
+            "component": {
+                "template": "<div>Custom content for tool</div>"
+            },
+            "type": "bespoke",
+            "instance": "mrdt",
+            "enabled": false
+        }
+    ],
+    "version": "1.0.9",
+    "createdBy": "DataBC Map Team",
+    "createdDate": "2022-05-05T18:48:15.735Z"
+}
