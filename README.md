@@ -1,2 +1,2 @@
 # smk-mrdt
-An SMK app for determining Municipal Regional District Tax rates.
+An SMK app for determining Municipal Regional District Tax.
