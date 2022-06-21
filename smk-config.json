@@ -5,7 +5,7 @@
         "location": {
             "center": [
                 -122.16796875000001,
-                52.2008737173322
+                51.2008737173322
             ],
             "extent": [
                 -130.71533203125003,
@@ -13,15 +13,15 @@
                 -113.62060546875001,
                 56.64414704199469
             ],
-            "zoom": 6
+            "zoom": 6.75
         },
         "baseMap": "Streets"
     },
     "layers": [
         {
             "type": "vector",
-            "id": "mrdt-tax-areas",
-            "title": "MRDT Tax Areas",
+            "id": "two-percent",
+            "title": "Municipal Regional District Tax: 2%",
             "isVisible": true,
             "isQueryable": true,
             "opacity": 0.65,
@@ -75,31 +75,116 @@
                     "id": "effect-date",
                     "name": "Effect_date",
                     "title": "Effect_date",
-                    "visible": false
+                    "visible": true
                 },
                 {
                     "id": "repeal-date",
                     "name": "Repeal_date",
                     "title": "Repeal_date",
-                    "visible": false
+                    "visible": true
                 }
             ],
             "queries": null,
             "useClustering": false,
-            "dataUrl": "./layers/mrdt-tax-areas.geojson",
+            "dataUrl": "./layers/two-percent.geojson",
             "legend": {
                 "line": true
             },
             "style": {
-                "strokeColor": "#3388ff",
+                "strokeColor": "#d95f02",
                 "strokeOpacity": 1,
-                "strokeWidth": 3,
+                "strokeWidth": 2,
                 "strokeCap": "round",
                 "strokeJoin": "round",
-                "fill": false,
-                "fillColor": "#3388ff",
-                "fillOpacity": 0.2
-            }
+                "fill": true,
+                "fillColor": "#d95f02",
+                "fillOpacity": 0.5
+            },
+            "popupTemplate": "<div class=\"smk-body\">  <div class=\"smk-feature\"><!----> <div class=\"smk-layer\">Municipal Regional District Tax: 2%</div> <div class=\"smk-attributes\"><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Recipient</span> <span><span class=\"smk-value\">{{feature.properties.Recipient}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Tax Rate</span> <span><span class=\"smk-value\">{{feature.properties.Tax_Rate}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Accom<wbr>_Area</span> <span><span class=\"smk-value\">{{feature.properties.Accom_Area}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Effect<wbr>_date</span> <span><span class=\"smk-value\">{{(new Date(feature.properties.Effect_date)).toLocaleDateString()}}</span></span></div><!----></div></div></div>"
+        },
+        {
+            "type": "vector",
+            "id": "three-percent",
+            "title": "Municipal Regional District Tax: 3%",
+            "isVisible": true,
+            "isQueryable": true,
+            "opacity": 0.65,
+            "minScale": null,
+            "maxScale": null,
+            "titleAttribute": null,
+            "attributes": [
+                {
+                    "id": "objectid",
+                    "name": "OBJECTID",
+                    "title": "OBJECTID",
+                    "visible": false
+                },
+                {
+                    "id": "recipient",
+                    "name": "Recipient",
+                    "title": "Recipient",
+                    "visible": true
+                },
+                {
+                    "id": "shape-leng",
+                    "name": "SHAPE_Leng",
+                    "title": "SHAPE_Leng",
+                    "visible": false
+                },
+                {
+                    "id": "tax-rate",
+                    "name": "Tax_Rate",
+                    "title": "Tax_Rate",
+                    "visible": true
+                },
+                {
+                    "id": "accom-area",
+                    "name": "Accom_Area",
+                    "title": "Accom_Area",
+                    "visible": true
+                },
+                {
+                    "id": "shape-length",
+                    "name": "Shape_Length",
+                    "title": "Shape_Length",
+                    "visible": false
+                },
+                {
+                    "id": "shape-area",
+                    "name": "Shape_Area",
+                    "title": "Shape_Area",
+                    "visible": false
+                },
+                {
+                    "id": "effect-date",
+                    "name": "Effect_date",
+                    "title": "Effect_date",
+                    "visible": true
+                },
+                {
+                    "id": "repeal-date",
+                    "name": "Repeal_date",
+                    "title": "Repeal_date",
+                    "visible": true
+                }
+            ],
+            "queries": null,
+            "useClustering": false,
+            "dataUrl": "./layers/three-percent.geojson",
+            "legend": {
+                "line": true
+            },
+            "style": {
+                "strokeColor": "#7570b3",
+                "strokeOpacity": 1,
+                "strokeWidth": 2,
+                "strokeCap": "round",
+                "strokeJoin": "round",
+                "fill": true,
+                "fillColor": "#7570b3",
+                "fillOpacity": 0.5
+            },
+            "popupTemplate": "<div class=\"smk-body\">  <div class=\"smk-feature\"><!----> <div class=\"smk-layer\">Municipal Regional District Tax: 3%</div> <div class=\"smk-attributes\"><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Recipient</span> <span><span class=\"smk-value\">{{feature.properties.Recipient}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Tax Rate</span> <span><span class=\"smk-value\">{{feature.properties.Tax_Rate}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Accom<wbr>_Area</span> <span><span class=\"smk-value\">{{feature.properties.Accom_Area}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Effect<wbr>_date</span> <span><span class=\"smk-value\">{{(new Date(feature.properties.Effect_date)).toLocaleDateString()}}</span></span></div><!----></div></div></div>"
         }
     ],
     "tools": [
@@ -148,8 +233,14 @@
             "enabled": true,
             "display": [
                 {
-                    "id": "mrdt-tax-areas",
-                    "title": "MRDT Tax Area"
+                    "id": "two-percent",
+                    "isVisible": true,
+                    "title": "Municipal Regional Tax - 2%"
+                },
+                {
+                    "id": "three-percent",
+                    "isVisible": true,
+                    "title": "Municipal Regional Tax - 3%"
                 }
             ]
         },
@@ -158,6 +249,18 @@
             "enabled": false
         },
         {
+            "order": 5,
+            "position": "list-menu",
+            "icon": "info_outline",
+            "title": "Identify Features",
+            "command": {
+                "select": true,
+                "radius": false,
+                "radiusUnit": false,
+                "nearBy": true
+            },
+            "radius": "20",
+            "radiusUnit": "px",
             "type": "identify",
             "enabled": true,
             "showPanel": true,
