@@ -73,7 +73,7 @@
                     "visible": false
                 },
                 {
-                    "id": "effect-date",
+                    "id": "mrdt-start-date",
                     "name": "MRDT_Start_Date",
                     "title": "MRDT_Start_Date",
                     "visible": true
@@ -157,7 +157,7 @@
                     "visible": false
                 },
                 {
-                    "id": "effect-date",
+                    "id": "mrdt-start-date",
                     "name": "MRDT_Start_Date",
                     "title": "MRDT_Start_Date",
                     "visible": true
