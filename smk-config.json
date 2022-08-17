@@ -285,7 +285,8 @@
         },
         {
             "type": "search",
-            "enabled": true
+            "enabled": true,
+            "identify": true
         },
         {
             "type": "coordinate",
