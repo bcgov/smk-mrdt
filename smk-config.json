@@ -73,9 +73,9 @@
                     "visible": false
                 },
                 {
-                    "id": "effect-date",
-                    "name": "Effect_date",
-                    "title": "Effect_date",
+                    "id": "mrdt-start-date",
+                    "name": "MRDT_Start_Date",
+                    "title": "MRDT_Start_Date",
                     "visible": true
                 },
                 {
@@ -101,7 +101,7 @@
                 "fillColor": "#d95f02",
                 "fillOpacity": 0.5
             },
-            "popupTemplate": "<div class=\"smk-body\">  <div class=\"smk-feature\"><!----> <div class=\"smk-layer\">Municipal Regional District Tax: 2%</div> <div class=\"smk-attributes\"><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Recipient</span> <span><span class=\"smk-value\">{{feature.properties.Recipient}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Tax Rate</span> <span><span class=\"smk-value\">{{feature.properties.Tax_Rate}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Accom<wbr>_Area</span> <span><span class=\"smk-value\">{{feature.properties.Accom_Area}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Effect<wbr>_date</span> <span><span class=\"smk-value\">{{(new Date(feature.properties.Effect_date)).toLocaleDateString()}}</span></span></div><!----></div></div></div>"
+            "popupTemplate": "<div class=\"smk-body\">\n    <div class=\"smk-feature\">\n        <div class=\"smk-layer\">\n            Municipal Regional District Tax: 2%\n        </div>\n        <div class=\"smk-attributes\">\n            <div class=\"smk-attribute\">\n                <span class=\"smk-attribute-title\">\n                    Recipient:\n                </span>\n                <span>\n                    <span class=\"smk-value\">\n                        {{feature.properties.Recipient}}\n                    </span>\n                </span>\n            </div>\n            <div class=\"smk-attribute\">\n                <span class=\"smk-attribute-title\">\n                    Tax Rate:\n                </span>\n                <span>\n                    <span class=\"smk-value\">\n                        {{feature.properties.Tax_Rate}}\n                    </span>\n                </span>\n            </div>\n            <div class=\"smk-attribute\">\n                <div class=\"smk-attribute\">\n                    <span class=\"smk-attribute-title\">\n                        Area:\n                    </span>\n                    <span>\n                        <span class=\"smk-value\">\n                            {{feature.properties.Accom_Area}}\n                        </span>\n                    </span>\n                </div>\n            </div>\n            <div class=\"smk-attribute\">\n                <div class=\"smk-attribute\">\n                    <span class=\"smk-attribute-title\">\n                        Start date:\n                    </span>\n                    <span>\n                        <span class=\"smk-value\">\n                            {{feature.properties.MRDT_Start_Date}}\n                        </span>\n                    </span>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
         },
         {
             "type": "vector",
@@ -157,9 +157,9 @@
                     "visible": false
                 },
                 {
-                    "id": "effect-date",
-                    "name": "Effect_date",
-                    "title": "Effect_date",
+                    "id": "mrdt-start-date",
+                    "name": "MRDT_Start_Date",
+                    "title": "MRDT_Start_Date",
                     "visible": true
                 },
                 {
@@ -185,7 +185,7 @@
                 "fillColor": "#7570b3",
                 "fillOpacity": 0.5
             },
-            "popupTemplate": "<div class=\"smk-body\">  <div class=\"smk-feature\"><!----> <div class=\"smk-layer\">Municipal Regional District Tax: 3%</div> <div class=\"smk-attributes\"><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Recipient</span> <span><span class=\"smk-value\">{{feature.properties.Recipient}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Tax Rate</span> <span><span class=\"smk-value\">{{feature.properties.Tax_Rate}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Accom<wbr>_Area</span> <span><span class=\"smk-value\">{{feature.properties.Accom_Area}}</span></span></div><div class=\"smk-attribute\"><span class=\"smk-attribute-title\">Effect<wbr>_date</span> <span><span class=\"smk-value\">{{(new Date(feature.properties.Effect_date)).toLocaleDateString()}}</span></span></div><!----></div></div></div>"
+            "popupTemplate": "<div class=\"smk-body\">\n    <div class=\"smk-feature\">\n        <div class=\"smk-layer\">\n            Municipal Regional District Tax: 3%\n        </div>\n        <div class=\"smk-attributes\">\n            <div class=\"smk-attribute\">\n                <span class=\"smk-attribute-title\">\n                    Recipient:\n                </span>\n                <span>\n                    <span class=\"smk-value\">\n                        {{feature.properties.Recipient}}\n                    </span>\n                </span>\n            </div>\n            <div class=\"smk-attribute\">\n                <span class=\"smk-attribute-title\">\n                    Tax Rate:\n                </span>\n                <span>\n                    <span class=\"smk-value\">\n                        {{feature.properties.Tax_Rate}}\n                    </span>\n                </span>\n            </div>\n            <div class=\"smk-attribute\">\n                <div class=\"smk-attribute\">\n                    <span class=\"smk-attribute-title\">\n                        Area:\n                    </span>\n                    <span>\n                        <span class=\"smk-value\">\n                            {{feature.properties.Accom_Area}}\n                        </span>\n                    </span>\n                </div>\n            </div>\n            <div class=\"smk-attribute\">\n                <div class=\"smk-attribute\">\n                    <span class=\"smk-attribute-title\">\n                        Start date:\n                    </span>\n                    <span>\n                        <span class=\"smk-value\">\n                            {{feature.properties.MRDT_Start_Date}}\n                        </span>\n                    </span>\n                </div>\n            </div>\n        </div>\n    </div>\n</div>"
         }
     ],
     "tools": [
