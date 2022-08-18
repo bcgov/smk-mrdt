@@ -24,6 +24,7 @@ WORKDIR /srv
 ADD  assets /srv/assets
 ADD layers /srv/layers
 ADD dist /srv/dist
+ADD dist/assets/node_modules /srv/dist/assets/node_modules
 COPY ["index.html", "smk-config.json", "smk-init.js", "/srv/"]
 COPY --from=BUILD_IMAGE /srv/node_modules /srv/node_modules
 
