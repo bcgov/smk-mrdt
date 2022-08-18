@@ -26,7 +26,6 @@ ADD layers /srv/layers
 ADD dist /srv/dist
 COPY ["index.html", "smk-config.json", "smk-init.js", "/srv/"]
 COPY --from=BUILD_IMAGE /srv/node_modules /srv/node_modules
-COPY --from=BUILD_IMAGE /srv/dist/assets/node_modules /srv/dist/assets/node_modules
 
 
 EXPOSE 8888
