@@ -86,7 +86,7 @@ include.module( 'tool-search.tool-search-identify-feature-js', [
 
                 self.featureSet.highlight( [ ev.feature.id] )
 
-                smk.$viewer.panToFeature( ev.feature )
+                self.featureSet.zoomTo( ev.feature.id )
             } )
         }
     )

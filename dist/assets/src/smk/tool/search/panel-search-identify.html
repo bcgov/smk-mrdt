@@ -14,9 +14,7 @@
         v-on:hover="$$emit( 'hover', $event )"
     ></feature-list>
 
-    <div
-        v-if="!layers || !layers.length"
-    >
-        No features were found.
+    <div v-if="!layers || !layers.length">
+        No municipal regional district tax applies at this location.
     </div>
 </tool-panel>
