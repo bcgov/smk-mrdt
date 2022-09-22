@@ -4,6 +4,8 @@ include.module( 'tool-search-leaflet', [
     'tool-search.marker-icon-yellow-png',
     'tool-search.marker-shadow-png',
     'tool-search.star-icon-yellow-png',
+    'tool-leaflet',
+    'tool-leaflet.tool-feature-list-leaflet-js'
 ], function ( inc ) {
     "use strict";
 
@@ -41,6 +43,14 @@ include.module( 'tool-search-leaflet', [
         popupAnchor:    [ 1, -24 ],
         shadowSize:     [ 31, 31 ]
     } )
+
+    SMK.TYPE.SearchIdentifyFeatureTool.addInitializer( function  ( smk ) {
+        var self = this
+
+        inc[ 'tool-leaflet.tool-feature-list-leaflet-js' ].call( this, smk )
+
+        var vw = smk.$viewer
+    })
 
     SMK.TYPE.SearchListTool.addInitializer( function ( smk ) {
         var self = this
@@ -103,16 +113,18 @@ include.module( 'tool-search-leaflet', [
         } )
 
         vw.searched.pickedFeature( function ( ev ) {
-            if ( ev.was ) {
-                var ly1 = ev.was.highlightLayer
-                brightHighlight( ly1, vw.searched.isHighlighted( ev.was.id ), false )
-            }
-
-            if ( ev.feature ) {
-                brightHighlight( ev.feature.highlightLayer, true, true, ev.feature )
-
-                pickedMarker.clearLayers()
-                pickedMarker.addLayer( ev.feature.pickMarker )
+            if (!self.identify) {
+                if ( ev.was ) {
+                    var ly1 = ev.was.highlightLayer
+                    brightHighlight( ly1, vw.searched.isHighlighted( ev.was.id ), false )
+                }
+    
+                if ( ev.feature ) {
+                    brightHighlight( ev.feature.highlightLayer, true, true, ev.feature )
+    
+                    pickedMarker.clearLayers()
+                    pickedMarker.addLayer( ev.feature.pickMarker )
+                }
             }
         } )
 
@@ -148,5 +160,4 @@ include.module( 'tool-search-leaflet', [
             }
         }
     } )
-
 } )

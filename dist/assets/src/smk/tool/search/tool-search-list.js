@@ -143,7 +143,6 @@ include.module( 'tool-search.tool-search-list-js', [
                     smk.$viewer.searched.clear()
 
                     self.busy = true
-                    //self.title = 'Locations matching <wbr>"' + ev.text + '"'
                     doAddressSearch( ev.text )
                         .then( function ( features ) {
                             self.active = true
@@ -160,10 +159,11 @@ include.module( 'tool-search.tool-search-list-js', [
                 },
 
                 'pick': function ( ev ) {
-                    // If identify = true, we want to trigger an identify operation at the selected address/location
+                    // If identify = true (from smk-config.json), we want to trigger an identify operation at the selected address/location
                     if (self.identify ) {
                         self.startedSearchIdentify()
                         smk.$viewer.identifyFeaturesAtPoint(ev.result.geometry, smk.$viewer.searchedIdentified)
+                        smk.$viewer.searched.clear()
                     } else {
                         smk.$viewer.searched.pick( null )
                         smk.$viewer.searched.pick( ev.result.id )
@@ -189,15 +189,11 @@ include.module( 'tool-search.tool-search-list-js', [
                 self.results = ev.features
             } )
 
-            // // smk.$viewer.selected.removedFeatures( function ( ev ) {
-            // // } )
-
             smk.$viewer.searched.pickedFeature( function ( ev ) {
-                self.highlightId = ev.feature && ev.feature.id
+                if (!self.identify) {
+                    self.highlightId = ev.feature && ev.feature.id
+                }
             } )
-
-            // // smk.$viewer.selected.highlightedFeatures( function ( ev ) {
-            // // } )
 
             smk.$viewer.searched.clearedFeatures( function ( ev ) {
                 self.results = []
@@ -208,4 +204,3 @@ include.module( 'tool-search.tool-search-list-js', [
         ]
     } )
 } )
-

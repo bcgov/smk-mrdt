@@ -1,4 +1,5 @@
 include.module( 'tool-search.tool-search-identify-feature-js', [
+    'tool.tool-feature-list-js',
     'component-tool-panel-feature',
     'tool.tool-panel-feature-js'
  ], function ( inc ) {
@@ -7,6 +8,7 @@ include.module( 'tool-search.tool-search-identify-feature-js', [
     return SMK.TYPE.Tool.define( 'SearchIdentifyFeatureTool',
         function () {
             SMK.TYPE.ToolPanel.call( this, 'tool-panel-feature' )
+            SMK.TYPE.ToolFeatureList.call( this, function ( smk ) { return smk.$viewer.searchedIdentified } )
             SMK.TYPE.ToolPanelFeature.call( this, function ( smk ) { return smk.$viewer.searchedIdentified } )
 
             this.parentId = 'SearchIdentifyTool'
@@ -83,8 +85,6 @@ include.module( 'tool-search.tool-search-identify-feature-js', [
                 self.setAttributeComponent( ly, ev.feature )
 
                 self.resultPosition = fids.indexOf( ev.feature.id )
-
-                self.featureSet.highlight( [ ev.feature.id] )
 
                 self.featureSet.zoomTo( ev.feature.id )
             } )

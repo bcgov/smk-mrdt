@@ -208,6 +208,7 @@ include.module( 'layer-leaflet.layer-vector-leaflet-js', [ 'layer.layer-vector-j
                 } )
                 .then( function ( layer ) {
                     if ( !layers[ 0 ].config.useClustering ) return layer
+                    layer.maxZoom = 19;
 
                     // var cluster = L.markerClusterGroup( self.clusterOption )
                     var cluster = L.markerClusterGroup( clusterOptions( layers[ 0 ].config, self ) )
