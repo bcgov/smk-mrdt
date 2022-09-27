@@ -264,6 +264,7 @@
             "radiusUnit": "px",
             "type": "identify",
             "enabled": true,
+            "noResultsMessage": "No municipal regional district tax applies at this location.",
             "showPanel": true,
             "showWidget": true,
             "style": {
@@ -285,7 +286,8 @@
         },
         {
             "type": "search",
-            "enabled": true
+            "enabled": true,
+            "identify": true
         },
         {
             "type": "coordinate",
