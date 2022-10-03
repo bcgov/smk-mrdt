@@ -45,11 +45,7 @@ include.module( 'tool-search-leaflet', [
     } )
 
     SMK.TYPE.SearchIdentifyFeatureTool.addInitializer( function  ( smk ) {
-        var self = this
-
         inc[ 'tool-leaflet.tool-feature-list-leaflet-js' ].call( this, smk )
-
-        var vw = smk.$viewer
     })
 
     SMK.TYPE.SearchListTool.addInitializer( function ( smk ) {
@@ -59,19 +55,23 @@ include.module( 'tool-search-leaflet', [
 
         var searchMarkers = L.featureGroup( { pane: 'markerPane' } )
         var pickedMarker = L.featureGroup( { pane: 'markerPane' } )
+        var identifyMarker = L.featureGroup({ pane: 'markerPane' })
 
         self.changedGroup( function () {
             self.visible = self.group
         } )
 
         self.changedVisible( function () {
+            identifyMarker.clearLayers()
             if ( self.visible ) {
                 vw.map.addLayer( searchMarkers )
                 vw.map.removeLayer( pickedMarker )
+                vw.map.addLayer( identifyMarker )
             }
             else {
                 vw.map.removeLayer( searchMarkers )
                 vw.map.addLayer( pickedMarker )
+                vw.map.removeLayer( identifyMarker )
             }
         } )
 
@@ -113,7 +113,14 @@ include.module( 'tool-search-leaflet', [
         } )
 
         vw.searched.pickedFeature( function ( ev ) {
-            if (!self.identify) {
+            if (self.identify) {
+                identifyMarker.clearLayers()
+
+                if (ev.feature && ev.feature.pickMarker) {
+                    vw.map.removeLayer(searchMarkers)
+                    identifyMarker.addLayer(ev.feature.pickMarker)
+                }
+            } else {
                 if ( ev.was ) {
                     var ly1 = ev.was.highlightLayer
                     brightHighlight( ly1, vw.searched.isHighlighted( ev.was.id ), false )

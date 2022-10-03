@@ -163,8 +163,9 @@ include.module( 'tool-search.tool-search-list-js', [
                     if (self.identify ) {
                         self.startedSearchIdentify()
                         smk.$viewer.identifyFeaturesAtPoint(ev.result.geometry, smk.$viewer.searchedIdentified)
-                        smk.$viewer.searched.clear()
-                        smk.$viewer.searched.highlightedFeatureId = {};
+                        smk.$viewer.searched.highlight( null )
+                        smk.$viewer.searched.pick( null )
+                        smk.$viewer.searched.pick( ev.result.id )
                     } else {
                         smk.$viewer.searched.pick( null )
                         smk.$viewer.searched.pick( ev.result.id )
