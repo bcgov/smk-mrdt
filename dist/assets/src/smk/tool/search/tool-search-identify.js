@@ -43,7 +43,7 @@ include.module( 'tool-search.tool-search-identify-js', [
 
                 featureIds =  Object.keys( self.featureSet.featureSet )
 
-                if ( featureIds && featureIds.length === 1 )
+                if ( featureIds && featureIds.length )
                     self.featureSet.pick( featureIds[0] )
 
             } )

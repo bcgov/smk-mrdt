@@ -22,6 +22,7 @@ include.module( 'tool-search.tool-search-identify-feature-js', [
                 if ( !self.active ) {
                     self.featureSet.highlight()
                     self.featureSet.pick()
+                    smk.$viewer.searched.pick( null )
                 }
             } )
 
