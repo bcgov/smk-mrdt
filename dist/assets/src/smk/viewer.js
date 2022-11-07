@@ -573,7 +573,7 @@ include.module( 'viewer', [ 'jquery', 'util', 'event', 'layer', 'feature-set', '
         ] )
     }
 
-    Viewer.prototype.identifyFeaturesAtPoint = function ( location, featureSet ) {
+    Viewer.prototype.identifyFeaturesAtPoint = function ( location, featureSet, fid ) {
         var self = this
 
         var view = this.getView()
@@ -656,6 +656,10 @@ include.module( 'viewer', [ 'jquery', 'util', 'event', 'layer', 'feature-set', '
         return SMK.UTIL.waitAll( promises )
             .finally( function () {
                 if ( !lock.held() ) throw IdentifyDiscardedError()
+                if (featureSet.isEmpty()) {
+                    self.searched.pick(fid);
+                    self.searched.highlight([fid]);
+                }
             } )
     }
 

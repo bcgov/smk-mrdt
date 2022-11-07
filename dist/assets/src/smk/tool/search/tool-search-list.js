@@ -162,7 +162,7 @@ include.module( 'tool-search.tool-search-list-js', [
                     // If identify = true (from smk-config.json), we want to trigger an identify operation at the selected address/location
                     if (self.identify ) {
                         self.startedSearchIdentify()
-                        smk.$viewer.identifyFeaturesAtPoint(ev.result.geometry, smk.$viewer.searchedIdentified)
+                        smk.$viewer.identifyFeaturesAtPoint(ev.result.geometry, smk.$viewer.searchedIdentified, ev.result.id)
                         smk.$viewer.searched.highlight( null )
                         smk.$viewer.searched.pick( null )
                         smk.$viewer.searched.pick( ev.result.id )
