@@ -211,7 +211,7 @@
             "enabled": true,
             "title": "About the MRDT Map",
             "position": "list-menu",
-            "content": "<p>Lookup the MRDT rate for any property in BC.</p>"
+            "content": "<p>Lookup the MRDT rate for any location in BC.</p>"
         },
         {
             "order": 3,
@@ -253,7 +253,7 @@
             "order": 5,
             "position": "list-menu",
             "icon": "info_outline",
-            "title": "Identify Features",
+            "title": "Region",
             "command": {
                 "select": true,
                 "radius": false,
