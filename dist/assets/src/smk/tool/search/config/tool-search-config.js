@@ -16,7 +16,7 @@ include.module( 'tool-search-config', [
             order: 2,
             position: 'toolbar',
             icon: 'search',
-            title: 'Search for Location',
+            title: 'Search by Address or Location',
             showPanel: true,
             showLocation: true,
             command: {

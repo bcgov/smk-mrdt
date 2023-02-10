@@ -207,6 +207,20 @@
             "enabled": true
         },
         {
+            "order": 1,
+            "position": "list-menu",
+            "icon": "help",
+            "title": "What's New?",
+            "useComponent": true,
+            "component": {
+                "template": "<div>Effective February 1, 2023, there is an additional Major Events Municipal and Regional District Tax (Major Events MRDT) applied to short-term accommodation within the City of Vancouver at the rate of 2.5%.</div>"
+            },
+            "type": "bespoke",
+            "instance": "whats-new",
+            "enabled": true
+        },
+        {
+            "order": 2,
             "type": "about",
             "enabled": true,
             "title": "About the MRDT Map",
