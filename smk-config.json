@@ -213,7 +213,7 @@
             "title": "What's New?",
             "useComponent": true,
             "component": {
-                "template": "<div><ul><li style='margin-bottom: 1em;'>Effective May 1, 2023, Cariboo Chilcotin Coast is expanding their MRDT boundaries to include the District of Wells and the City of Quesnel.</li><li style='margin-bottom: 1em;'>Effective May 1, 2023, the City of Revelstoke is increasing their MRDT rate to 3%, as well as expanding their MRDT boundaries to include Columbia Shuswap Regional District Electoral Area B.</li><li>Effective February 1, 2023, there is an additional Major Events Municipal and Regional District Tax (Major Events MRDT) applied to short-term accommodation within the City of Vancouver at the rate of 2.5%.</li></ul></div>"
+                "template": "<div><ul><li style='margin-bottom: 1em;'>Effective May 1, 2023, Cariboo Chilcotin Coast is expanding their MRDT boundaries to include the District of Wells and the City of Quesnel at an MRDT rate of 3%.</li><li style='margin-bottom: 1em;'>Effective May 1, 2023, the City of Revelstoke is increasing their MRDT rate to 3%, as well as expanding their MRDT boundaries to include Columbia Shuswap Regional District Electoral Area B.</li><li>Effective February 1, 2023, there is an additional Major Events Municipal and Regional District Tax (Major Events MRDT) applied to short-term accommodation within the City of Vancouver at the rate of 2.5%.</li></ul></div>"
             },
             "type": "bespoke",
             "instance": "whats-new",
