@@ -4,10 +4,12 @@
     "description": "Lookup the MRDT for any property in BC.",
     "author": "DataBC Map Team",
     "dependencies": {
-        "@bcgov/smk": "1.1.8",
-        "http-server": "^14.1.1"
+        "@bcgov/smk": "1.2.1",
+        "http-server": "^14.1.1",
+        "patch-package": "^8.0.0"
     },
     "scripts": {
+        "postinstall": "patch-package",
         "view": "http-server -o -c-1"
     }
 }
