@@ -56,7 +56,7 @@ jobs:
         OPENSHIFT_TOKEN_DEV: ${{ secrets.OPENSHIFT_TOKEN_DEV }}
         GHCR_USER: ${{ secrets.GHCR_USER }}
         GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
-        DOCKER_REGISTRY: 'docker.pkg.github.com'
+        DOCKER_REGISTRY: 'ghcr.io'
 
     - name: deploying dev
       uses: bcgov/smk-actions/smk-deploy@main
@@ -67,6 +67,6 @@ jobs:
         OPENSHIFT_TOKEN_DEV: ${{ secrets.OPENSHIFT_TOKEN_DEV }}
         GHCR_USER: ${{ secrets.GHCR_USER }}
         GHCR_TOKEN: ${{ secrets.GHCR_TOKEN }}
-        DOCKER_REGISTRY: 'docker.pkg.github.com'
+        DOCKER_REGISTRY: 'ghcr.io'
         PR_REVIEWERS: '["michaelpnelson"]'
         PR_MENTIONS: '["michaelpnelson"]'
