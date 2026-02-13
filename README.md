@@ -4,11 +4,11 @@ An interactive map application for looking up Municipal Regional District Tax (M
 
 ## Overview
 
-The MRDT Lookup Tool provides BC residents and property managers with an easy-to-use web-based map interface to determine the applicable Municipal Regional District Tax rate for any property location in the province. The application displays MRDT jurisdictions with their corresponding tax rates, accommodation areas, and implementation dates.
+The MRDT Lookup Tool provides BC residents and property managers with an easy-to-use web-based map interface to determine the applicable Municipal Regional District Tax rate for any property location in the province. The application displays MRDT jurisdictions with their corresponding tax rates, accommodation areas and implementation dates.
 
 ### About MRDT
 
-The Municipal Regional District Tax (MRDT) is a tax levied on short-term rental accommodations in designated areas of British Columbia. This tool helps property owners, managers, and renters understand which tax rates apply to specific locations.
+The Municipal Regional District Tax (MRDT) is a tax levied on short-term rental accommodations in designated areas of British Columbia. This tool helps property owners, managers and renters understand which tax rates apply to specific locations.
 
 ## Features
 
@@ -67,7 +67,7 @@ The application is configured through `smk-config.json`, which defines:
 - **Base Map**: Streets basemap from ESRI
 - **Layers**: Vector layers for 2% and 3% MRDT zones with custom styling
 - **Styling**: Orange borders (#d95f02) to highlight MRDT jurisdictions
-- **Attributes**: Display of tax rates, recipients, accommodation areas, and dates
+- **Attributes**: Display of tax rates, recipients, accommodation areas and dates
 
 
 ## Data Sources
