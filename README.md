@@ -58,27 +58,6 @@ This will:
 
 Access the application at `http://localhost:8080`
 
-## Project Structure
-
-```
-smk-mrdt/
-├── index.html              # Main HTML entry point
-├── smk-init.js             # SMK initialization script
-├── smk-config.json         # Map configuration and layer definitions
-├── package.json            # Node.js dependencies and scripts
-├── Dockerfile              # Container build configuration
-├── LICENSE                 # Apache 2.0 License
-├── code_of_conduct.md      # Community guidelines
-├── README.md               # This file
-├── assets/
-│   └── style.css           # Custom styling
-├── layers/
-│   ├── two-percent.geojson # 2% MRDT zones
-│   ├── three-percent.geojson# 3% MRDT zones
-│   └── smk-catalog.json    # Layer catalog configuration
-└── patches/
-    └── @bcgov+smk+1.2.3.patch # Patches applied to SMK dependency
-```
 
 ## Configuration
 
