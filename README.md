@@ -66,7 +66,7 @@ The application is configured through `smk-config.json`, which defines:
 - **Map Viewer**: Leaflet-based viewer with initial zoom level and extent centered on BC
 - **Base Map**: Streets basemap from ESRI
 - **Layers**: Vector layers for 2% and 3% MRDT zones with custom styling
-- **Styling**: tyle rules for layers, for example, orange borders (#d95f02) to highlight MRDT jurisdictions
+- **Styling**: Style rules for layers, for example, orange borders (#d95f02) to highlight MRDT jurisdictions
 - **Attributes**: Display of tax rates, recipients, accommodation areas and dates
 
 
