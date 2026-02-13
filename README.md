@@ -66,7 +66,7 @@ The application is configured through `smk-config.json`, which defines:
 - **Map Viewer**: Leaflet-based viewer with initial zoom level and extent centered on BC
 - **Base Map**: Streets basemap from ESRI
 - **Layers**: Vector layers for 2% and 3% MRDT zones with custom styling
-- **Styling**: Orange borders (#d95f02) to highlight MRDT jurisdictions
+- **Styling**: tyle rules for layers, for example, orange borders (#d95f02) to highlight MRDT jurisdictions
 - **Attributes**: Display of tax rates, recipients, accommodation areas and dates
 
 
@@ -77,7 +77,7 @@ The application is configured through `smk-config.json`, which defines:
 
 ## Technologies Used
 
-- **[SMK (Server Map Kit)](https://github.com/bcgov/smk)**: BC Government's map framework
+- **[SMK (Simple Map Kit)](https://github.com/bcgov/smk)**: BC Government's map framework
 - **[Leaflet](https://leafletjs.com/)**: Open-source mapping library
 - **[GeoJSON](https://geojson.org/)**: Geographic data format
 - **[Caddy](https://caddyserver.com/)**: Lightweight web server
