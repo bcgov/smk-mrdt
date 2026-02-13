@@ -98,7 +98,7 @@ The application is configured through `smk-config.json`, which defines:
 
 ## Technologies Used
 
-- **[SMK (Server Map Kit)](https://github.com/bcgov/smk)**: v1.2.4 - BC Government's map framework
+- **[SMK (Server Map Kit)](https://github.com/bcgov/smk)**: BC Government's map framework
 - **[Leaflet](https://leafletjs.com/)**: Open-source mapping library
 - **[GeoJSON](https://geojson.org/)**: Geographic data format
 - **[Caddy](https://caddyserver.com/)**: Lightweight web server
