@@ -213,7 +213,7 @@
             "title": "What's New?",
             "useComponent": true,
             "component": {
-                "template": "<div><ul><li style='margin-bottom: 1em;'>Effective May 1, 2026, the Sunshine Coast Regional District and an area of the qathet Regional District will increase the MRDT rate from 2% to 3%.</li><li style='margin-bottom: 1em;'>Effective March 1, 2026, the District of Summerland will begin collecting the MRDT at the rate of 3%.</li><li style='margin-bottom: 1em;'>Effective November 1, 2025, the District of Sooke will begin collecting the MRDT at the rate of 3%.</li></ul></div>"
+                "template": "<div><ul><li style='margin-bottom: 1em;'>Effective September 1, 2026, the City of Courtenay will temporarily cease collection of the 2% MRDT until further notice.</li><li style='margin-bottom: 1em;'>Effective May 1, 2026, the Sunshine Coast Regional District and an area of the qathet Regional District will increase the MRDT rate from 2% to 3%.</li><li style='margin-bottom: 1em;'>Effective March 1, 2026, the District of Summerland will begin collecting the MRDT at the rate of 3%.</li><li style='margin-bottom: 1em;'>Effective November 1, 2025, the District of Sooke will begin collecting the MRDT at the rate of 3%.</li></ul></div>"
             },
             "type": "bespoke",
             "instance": "whats-new",
